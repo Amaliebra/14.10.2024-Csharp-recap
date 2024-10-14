@@ -37,5 +37,16 @@ class Program
         string hello = "Hello";
         string world = "World";
         Console.WriteLine(utility.SimpleConcat(hello, world));
+
+        bool canEnter = false;
+        int age = 19;
+        if(age >= 18 && !canEnter)
+        {
+            Console.WriteLine("You can enter");
+        }
+        else
+        {
+            Console.WriteLine("You cannot enter");
+        }
     }
 }
