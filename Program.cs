@@ -30,5 +30,12 @@ class Program
         {
             Console.WriteLine(handleListe[i]);
         }
+
+        personEn.SayHello();
+
+        Utility utility = new Utility();
+        string hello = "Hello";
+        string world = "World";
+        Console.WriteLine(utility.SimpleConcat(hello, world));
     }
 }
