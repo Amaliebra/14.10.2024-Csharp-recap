@@ -9,12 +9,26 @@ class Program
         string yoWorld = "Yo World";
         Console.WriteLine($"{yoWorld}, today it is the {todayDate}th of {monthOct}.");
 
-        Person person = new Person();
+        Person personEn = new Person();
 
-        person.Name = "Justin Bieber";
-        person.Age = 30;
-        person.Gender = "male";
+        personEn.Name = "Justin Bieber";
+        personEn.Age = 30;
+        personEn.Gender = "male";
 
-        Console.WriteLine($"{person.Name} is a {person.Age} year old {person.Gender}");
+        Console.WriteLine($"{personEn.Name} is a {personEn.Age} year old {personEn.Gender}");
+
+        Person personTo = new Person();
+
+        personTo.Name = "Asmongold";
+        personTo.Age = 34;
+        personTo.Gender = "male";
+
+        Console.WriteLine($"Name:{personTo.Name}\nAge:{personTo.Age}\nGender:{personTo}");
+
+        string[] handleListe = {"Melk", "Egg", "Brus"};
+        for (int i = 0; i < handleListe.Length; i++)
+        {
+            Console.WriteLine(handleListe[i]);
+        }
     }
 }
